@@ -312,7 +312,7 @@ Recover from primary data sources:
 
 1. **queue/shogun_to_karo.yaml** — Check each cmd status (pending/done)
 2. **config/projects.yaml** — Project list
-3. **Memory MCP (read_graph)** — System settings, Lord's preferences
+3. **Auto-memory (`memory/MEMORY.md` + individual files)** — rules, preferences, lessons (file-based; Memory MCP retired 2026-07-01)
 4. **dashboard.md** — Secondary info only (Karo's summary, YAML is authoritative)
 
 Actions after recovery:
@@ -323,7 +323,7 @@ Actions after recovery:
 ## Context Loading (Session Start)
 
 1. Read CLAUDE.md (auto-loaded)
-2. Read Memory MCP (read_graph)
+2. Read auto-memory `memory/MEMORY.md` (+ referenced memory files as needed)
 3. Check config/projects.yaml
 4. Read project README.md/CLAUDE.md
 5. Read dashboard.md for current situation
@@ -353,13 +353,19 @@ Rules:
 - Shogun directs review policy to Karo; Karo assigns personas to Ashigaru (F002)
 - Never "reject everything" — respect contributor's time
 
-## Memory MCP
+## Memory (file-based)
+
+Memory MCP (`mcp__memory__*`, server-memory) was **retired 2026-07-01** — never call it. Persistent
+memory is file-based: `memory/MEMORY.md` is the index (auto-loaded), one fact per individual file.
 
 Save when:
-- Lord expresses preferences → `add_observations`
-- Important decision made → `create_entities`
-- Problem solved → `add_observations`
-- Lord says "remember this" → `create_entities`
+- Lord expresses preferences → write/update a `feedback_*.md` or `user_*.md` memory file
+- Important decision made → write/update a `project_*.md` memory file (include the why)
+- Problem solved → record the lesson in the relevant memory file
+- Lord says "remember this" → save the non-obvious part as a memory file
+
+After writing a file, add a one-line pointer to `MEMORY.md`. Update existing files rather than
+creating duplicates; delete memories proven wrong.
 
 Save: Lord's preferences, key decisions + reasons, cross-project insights, solved problems.
 Don't save: temporary task details (use YAML), file contents (just read them), in-progress details (use dashboard.md).

@@ -900,8 +900,7 @@ External PRs are reinforcements. Treat with respect.
 1. `queue/shogun_to_karo.yaml` — current cmd (check status: pending/done)
 2. `queue/tasks/ashigaru{N}.yaml` — all ashigaru assignments
 3. `queue/reports/ashigaru{N}_report.yaml` — unreflected reports?
-4. `Memory MCP (read_graph)` — system settings, lord's preferences
-5. `context/{project}.md` — project-specific knowledge (if exists)
+4. `context/{project}.md` — project-specific knowledge (if exists)
 
 **dashboard.md is secondary** — may be stale after compaction. YAMLs are ground truth.
 
@@ -916,12 +915,11 @@ External PRs are reinforcements. Treat with respect.
 ## Context Loading Procedure
 
 1. CLAUDE.md (auto-loaded)
-2. Memory MCP (`read_graph`)
-3. `config/projects.yaml` — project list
-4. `queue/shogun_to_karo.yaml` — current instructions
-5. If task has `project` field → read `context/{project}.md`
-6. Read related files
-7. Report loading complete, then begin decomposition
+2. `config/projects.yaml` — project list
+3. `queue/shogun_to_karo.yaml` — current instructions
+4. If task has `project` field → read `context/{project}.md`
+5. Read related files
+6. Report loading complete, then begin decomposition
 
 ## Autonomous Judgment (Act Without Being Told)
 
