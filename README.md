@@ -17,6 +17,9 @@ Run 10 AI coding agents in parallel — **Claude Code, OpenAI Codex, GitHub Copi
 
 </div>
 
+> **📖 Sequel (Aug 2026):** The author has since disbanded his own 10-agent army down to a single agent that carries his judgment. The successor project is [**kagemusha**](https://github.com/yohey-w/kagemusha) — it ships the forms of a *judgment loop* (corrections → principles → standing rules), not the agents. The story of the disbandment: [article (JP)](https://zenn.dev/shio_shoppaize/articles/kagemusha-shogun-disband). multi-agent-shogun itself continues to work as-is.
+
+
 <p align="center">
   <img src="images/screenshots/hero/latest-translucent-20260210-190453.png" alt="Latest translucent command session in the Shogun pane" width="940">
 </p>

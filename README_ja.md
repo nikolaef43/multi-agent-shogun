@@ -17,6 +17,9 @@
 
 </div>
 
+> **📖 続編(2026年8月):** 作者はその後、自分の10体のAI家臣団を解散し、判断だけを引き継いだ一体に絞りました。後継プロジェクトは [**kagemusha**](https://github.com/yohey-w/kagemusha)——エージェントではなく、判断ループ(訂正→原則→恒久ルール)の「形式」を配るキットです。解散の顛末: [記事](https://zenn.dev/shio_shoppaize/articles/kagemusha-shogun-disband)。multi-agent-shogun自体はこれまでどおり動きます。
+
+
 <p align="center">
   <img src="images/screenshots/hero/latest-translucent-20260210-190453.png" alt="将軍ペインでの最新半透過セッションキャプチャ" width="940">
 </p>
